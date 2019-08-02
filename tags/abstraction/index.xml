@@ -1,26 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Index on Omanshu&#39;s blog</title>
-    <link>http://omanshuthapliyal.github.io/blog/</link>
-    <description>Recent content in Index on Omanshu&#39;s blog</description>
+    <title>abstraction on Omanshu&#39;s blog</title>
+    <link>http://omanshuthapliyal.github.io/blog/tags/abstraction/</link>
+    <description>Recent content in abstraction on Omanshu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 28 Jul 2019 16:02:49 -0400</lastBuildDate>
     
-	<atom:link href="http://omanshuthapliyal.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/abstraction/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Point Estimate</title>
-      <link>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</link>
-      <pubDate>Fri, 02 Aug 2019 07:58:15 -0400</pubDate>
-      
-      <guid>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</guid>
-      <description>This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.
-##Background
-MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics.</description>
-    </item>
     
     <item>
       <title>Instrumentals v/s Vocal Music</title>

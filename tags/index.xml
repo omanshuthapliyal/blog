@@ -2,13 +2,50 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Omanshu&#39;s blog</title>
-    <link>http://omanshuthapliyal.github.io-blog/tags/</link>
+    <link>http://omanshuthapliyal.github.io/blog/tags/</link>
     <description>Recent content in Tags on Omanshu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Fri, 02 Aug 2019 07:58:15 -0400</lastBuildDate>
     
-	<atom:link href="http://omanshuthapliyal.github.io-blog/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>point estimate</title>
+      <link>http://omanshuthapliyal.github.io/blog/tags/point-estimate/</link>
+      <pubDate>Fri, 02 Aug 2019 07:58:15 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/tags/point-estimate/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>statistics</title>
+      <link>http://omanshuthapliyal.github.io/blog/tags/statistics/</link>
+      <pubDate>Fri, 02 Aug 2019 07:58:15 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/tags/statistics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>abstraction</title>
+      <link>http://omanshuthapliyal.github.io/blog/tags/abstraction/</link>
+      <pubDate>Sun, 28 Jul 2019 16:02:49 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/tags/abstraction/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>music</title>
+      <link>http://omanshuthapliyal.github.io/blog/tags/music/</link>
+      <pubDate>Sun, 28 Jul 2019 16:02:49 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/tags/music/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
