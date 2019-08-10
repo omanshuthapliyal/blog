@@ -5,8 +5,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Point Estimate - Omanshu&#39;s blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Point Estimate" />
 <meta property="og:description" content="This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.
-##Background
-MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics." />
+Background MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://omanshuthapliyal.github.io/blog/posts/pointestimate/" />
 <meta property="article:published_time" content="2017-02-03T07:58:15-04:00"/>
@@ -14,8 +13,7 @@ MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (meth
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Point Estimate"/>
 <meta name="twitter:description" content="This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.
-##Background
-MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics."/>
+Background MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="../../css/normalize.css" />
@@ -59,22 +57,22 @@ MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (meth
 		<div class="markdown">
 			<p>This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.</p>
 
-<p>##Background</p>
+<h2 id="background">Background</h2>
 
 <p>MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to <a href="https://en.wikipedia.org/wiki/Point_estimation">point estimation</a> problems and are among many other estimation methods in statistics.</p>
 
-<p>##Point estimation problem</p>
+<h2 id="point-estimation-problem">Point estimation problem</h2>
 
 <p>A generic point estimation problem goes like this:
 Consider a random variable <span  class="math">\(x\sim f(x;\theta)\)</span> with the parameter <span  class="math">\(\theta\in\Omega\)</span>. Here <span  class="math">\(f(x;\theta)\)</span> corresponds to a <em>family of distributions</em> rather than a single probability distribution. We are interested in finding a <em>point</em> estimate to the parameter <span  class="math">\(\theta\)</span>. In order to do that, we draw a random sample with <span  class="math">\(n\)</span> realizations of the random variable <span  class="math">\(x\)</span> as <span  class="math">\(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\)</span>. In shorthand, this realization from the <span  class="math">\(n\)</span> experiments of the given family of distribution is also written as simply <span  class="math">\(\{X_1,X_2,\cdots,X_n\}\)</span>.</p>
 
-<p>##Solution strategies</p>
+<h2 id="solution-strategies">Solution strategies</h2>
 
 <p>Our point estimate, in order to capture the information in the realization <span  class="math">\(\tilde{X}\)</span>, has to depend on another statistic <span  class="math">\(Y=u(\tilde{X})\)</span>, such that our point estimate is:
 <span  class="math">\(\hat{\theta}=u(\tilde{X})\)</span>
 This is a key point and is intuitive to the problem of point estimation.</p>
 
-<p>##Maximum likelihood</p>
+<h3 id="maximum-likelihood">Maximum likelihood</h3>
 
 <p>One of the ways to go about finding <span  class="math">\(\hat{\theta}\)</span> is to find <em>what value of parameter</em> <span  class="math">\(\theta\)</span> <em>makes the current realization</em> <span  class="math">\(\tilde{X}\)</span> <em>most likely</em>. In order to do this, observe that the joint-distribution of the observed data is given by
 <span  class="math">\(f(\theta;x_1=X_1,x_2=X_2,\cdots,x_n=X_n)=\prod_{i=1}^{n} f(x_i;\theta):=L(\theta)\)</span>
@@ -83,7 +81,7 @@ This is the likelihood function. An intuitive estimate to the parameter would no
 Notice that this requires the likelihood function to be differentiable in order to be maximized; and often a log-likelihood is maximized instead of the likelihood function instead.
 The Maximum likelihood estimator is <a href="https://en.wikipedia.org/wiki/Consistent_estimator">consistent</a>, and often <a href="https://en.wikipedia.org/wiki/Bias_of_an_estimator">unbiased</a>. Then the obvious question is:</p>
 
-<p>##Why do MoM? (or some other estimator)</p>
+<h4 id="why-do-mom-or-some-other-estimator">Why do MoM? (or some other estimator)</h4>
 
 <p>For this, consider a family of Gamma distribution with parameters <span  class="math">\(\theta_1=\alpha, \theta_2=\beta\)</span> such that <span  class="math">\(\theta_1,\theta_2>0\)</span>, be given by:
 <span  class="math">\(f(x;\theta_1,\theta_2)=\frac{1}{\Gamma(\theta_1)\theta_2^{\theta_1}}x^{\theta_1-1}e^{-\frac{x}{\theta_2}}\)</span>
@@ -94,7 +92,7 @@ For a particular sample of data <span  class="math">\(\tilde{X}\)</span> from th
 <p>Not so easy to find the MLE now, is it!
 <em>The gamma function in the likelihood makes it hard to find the MLE in a closed form in this example, and in general.</em></p>
 
-<p>##MoM</p>
+<h3 id="mom">MoM</h3>
 
 <p>MoM is another intuitive way to proceed in such problems where MLE either does not exist, or is hard to calculate.
 The underlying principle of an MLE, which is very easy to follow, is:
@@ -102,7 +100,7 @@ Equate <span  class="math">\(\frac{1}{n}\sum_{i=1}^{n}X_i^k\)</span> to the expe
 Pretty easy, right!
 Then why do we need other estimators?</p>
 
-<p>##Why do MLE?</p>
+<h3 id="why-do-mle">Why do MLE?</h3>
 
 <p>Suppose, in the very same example of the gamma-family, you need to find the parameters <span  class="math">\(\theta_1\)</span> and let <span  class="math">\(\theta_2=\beta\)</span> be given, for simplicity.
 The likelihood of the observed sample is:
@@ -119,12 +117,14 @@ We can conclusively say from this, that</p>
 This is where MLE shines, and this is why it is used; if it is useful to a problem!
 However, MoM estimates are good starting point for numerically complex point estimation problems and can iteratively lead to a good estimate and are consistent estimates.</p>
 
-<p>##Why MAP?</p>
+<h3 id="why-map">Why MAP?</h3>
 
 <p>Coming back to the definition of the point estimation problem, suppose in addition to <span  class="math">\(\theta\in\Omega\)</span>, we have some more knowledge about where it could be in <span  class="math">\(\Omega\)</span>; this is usually in the form of some <em>prior knowledge about</em> <span  class="math">\(\theta\sim g(\theta|\theta\in\Omega)\)</span>; hence called the prior.
 The MAP estimate is a way to include this knowledge in our estimation as
 <span  class="math">\(\hat{\theta}_{\mathrm{MAP}}=\underset{\theta}{\mathrm{argmax\,}} f(x;\theta)g(\theta)\)</span>
 This is just using the fact that <em>using more information to find</em> <span  class="math">\(\hat{\theta}\)</span> <em>wouldn’t hurt!</em></p>
+
+<h2 id="so-">So ...</h2>
 
 <p>Now that we know about what is going on, I would answer the questions asked here.
 What is the difference between MAP, MLE, MoM?
