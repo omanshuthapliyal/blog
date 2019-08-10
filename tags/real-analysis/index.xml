@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>real analysis on Omanshu&#39;s blog</title>
+    <link>http://omanshuthapliyal.github.io/blog/tags/real-analysis/</link>
+    <description>Recent content in real analysis on Omanshu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 09 Aug 2018 07:58:15 -0400</lastBuildDate>
+    
+	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/real-analysis/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Compactness</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/compactness/</link>
+      <pubDate>Thu, 09 Aug 2018 07:58:15 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/compactness/</guid>
+      <description>This is a non-mathematical note on what I understand about compactness and what it means for a set or a space to be compact. The open cover definition is one that can be found in any textbook, but what does it mean for a set to be compact? Why are such sets called compact? And how do compact sets differ from those which are not?
+I think the terminology here is very carefully chosen.</description>
+    </item>
+    
+  </channel>
+</rss>

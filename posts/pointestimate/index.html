@@ -9,8 +9,8 @@
 MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://omanshuthapliyal.github.io/blog/posts/pointestimate/" />
-<meta property="article:published_time" content="2019-08-02T07:58:15-04:00"/>
-<meta property="article:modified_time" content="2019-08-02T07:58:15-04:00"/>
+<meta property="article:published_time" content="2017-02-03T07:58:15-04:00"/>
+<meta property="article:modified_time" content="2017-02-03T07:58:15-04:00"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Point Estimate"/>
 <meta name="twitter:description" content="This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.
@@ -53,7 +53,7 @@ MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (meth
 
 		<div class="post-header">
 			<h1 class="title">Point Estimate</h1>
-			<div class="meta">Posted at &mdash; Aug 2, 2019</div>
+			<div class="meta">Posted at &mdash; Feb 3, 2017</div>
 		</div>
 
 		<div class="markdown">
@@ -71,73 +71,75 @@ Consider a random variable <span  class="math">\(x\sim f(x;\theta)\)</span> with
 <p>##Solution strategies</p>
 
 <p>Our point estimate, in order to capture the information in the realization <span  class="math">\(\tilde{X}\)</span>, has to depend on another statistic <span  class="math">\(Y=u(\tilde{X})\)</span>, such that our point estimate is:
-$\hat{\theta}=u(\tilde{X})$$
+<span  class="math">\(\hat{\theta}=u(\tilde{X})\)</span>
 This is a key point and is intuitive to the problem of point estimation.</p>
 
 <p>##Maximum likelihood</p>
 
-<p>One of the ways to go about finding $\hat{\theta}$ is to find *what value of parameter *<span  class="math">\(\theta\)</span> *makes the current realization *<span  class="math">\(\tilde{X}\)</span> <em>most likely</em>. In order to do this, observe that the joint-distribution of the observed data is given by
+<p>One of the ways to go about finding <span  class="math">\(\hat{\theta}\)</span> is to find <em>what value of parameter</em> <span  class="math">\(\theta\)</span> <em>makes the current realization</em> <span  class="math">\(\tilde{X}\)</span> <em>most likely</em>. In order to do this, observe that the joint-distribution of the observed data is given by
 <span  class="math">\(f(\theta;x_1=X_1,x_2=X_2,\cdots,x_n=X_n)=\prod_{i=1}^{n} f(x_i;\theta):=L(\theta)\)</span>
-This is the likelihood function. An intuitive estimate to the parameter would now be the value that makes the data points observed <em>most likely</em>; simply given by
-<span  class="math">\(\hat{\theta}_{\mathrm{MLE}}=\underset{\theta}{\mathrm{argmax\,}} L(\theta) = \mathrm{arg}\{\frac{dL}{d\theta}=0\}\)</span>
+This is the likelihood function. An intuitive estimate to the parameter would now be the value that makes the data points observed <em>most likely</em> ; simply given by
+<span  class="math">\(\hat{\theta}_{\mathrm{MLE}}=\underset{\theta}{\mathrm{argmax\,}} L(\theta) = \mathrm{arg}\left\{\frac{dL}{d\theta}=0\right\}\)</span>
 Notice that this requires the likelihood function to be differentiable in order to be maximized; and often a log-likelihood is maximized instead of the likelihood function instead.
 The Maximum likelihood estimator is <a href="https://en.wikipedia.org/wiki/Consistent_estimator">consistent</a>, and often <a href="https://en.wikipedia.org/wiki/Bias_of_an_estimator">unbiased</a>. Then the obvious question is:</p>
 
-<p>##Why do MoM? (or some other estimator)
-For this, consider a family of Gamma distribution with parameters <span  class="math">\(\theta_1=\alpha, \theta_2=\beta\)</span> such that <span  class="math">\(\theta_1,\theta_2>0\)</span>, be given by:
+<p>##Why do MoM? (or some other estimator)</p>
+
+<p>For this, consider a family of Gamma distribution with parameters <span  class="math">\(\theta_1=\alpha, \theta_2=\beta\)</span> such that <span  class="math">\(\theta_1,\theta_2>0\)</span>, be given by:
 <span  class="math">\(f(x;\theta_1,\theta_2)=\frac{1}{\Gamma(\theta_1)\theta_2^{\theta_1}}x^{\theta_1-1}e^{-\frac{x}{\theta_2}}\)</span>
-For a particular sample of data <span  class="math">\(\tilde{X}\)</span> from this family, we get the likelihood function as:
-<span  class="math">\(L(\theta_1,\theta_2;x_1,\cdots,x_n)=[\frac{1}{\Gamma(\theta_1)\theta_2^{\theta_1}}]^n(x_1 x_2\cdots x_n)^{\theta_1-1}\mathrm{exp}(-\sum_{i=1}^{n} x_i/\theta_2)\)</span>
-Not so easy to find the MLE now, is it!
+For a particular sample of data <span  class="math">\(\tilde{X}\)</span> from this family, we get the likelihood function as</p>
+
+<p><span  class="math">\[L(\theta_1,\theta_2;x_1,\cdots,x_n)=\left[\frac{1}{\Gamma(\theta_1)\theta_2^{\theta_1}}\right]^n(x_1 x_2\cdots x_n)^{\theta_1-1}\mathrm{exp}(-\sum_{i=1}^{n} x_i/\theta_2)\]</span></p>
+
+<p>Not so easy to find the MLE now, is it!
 <em>The gamma function in the likelihood makes it hard to find the MLE in a closed form in this example, and in general.</em></p>
 
-<p>##MoM
-MoM is another intuitive way to proceed in such problems where MLE either does not exist, or is hard to calculate.
+<p>##MoM</p>
+
+<p>MoM is another intuitive way to proceed in such problems where MLE either does not exist, or is hard to calculate.
 The underlying principle of an MLE, which is very easy to follow, is:
 Equate <span  class="math">\(\frac{1}{n}\sum_{i=1}^{n}X_i^k\)</span> to the expectation <span  class="math">\(\mathbb{E}[x^k]\)</span> for <span  class="math">\(k = 1,2,\cdots\)</span> until you have enough equations to solve for parameters <span  class="math">\(\theta\)</span>.
 Pretty easy, right!
 Then why do we need other estimators?</p>
 
-<p>##Why do MLE?
-Suppose, in the very same example of the gamma-family, you need to find the parameters <span  class="math">\(\theta_1\)</span> and let <span  class="math">\(\theta_2=\beta\)</span> be given, for simplicity.
+<p>##Why do MLE?</p>
+
+<p>Suppose, in the very same example of the gamma-family, you need to find the parameters <span  class="math">\(\theta_1\)</span> and let <span  class="math">\(\theta_2=\beta\)</span> be given, for simplicity.
 The likelihood of the observed sample is:
-<span  class="math">\(L(\theta_1;x_1,\cdots,x_n)=[\frac{1}{\Gamma(\theta_1)\beta^{\theta_1}}]^n(x_1 x_2\cdots x_n)^{\theta_1-1}\mathrm{exp}(-\sum_{i=1}^{n} x_i/\beta)\)</span>
-<span  class="math">\(= ([\frac{1}{\Gamma(\theta_1)\beta^{\theta_1}}]^n \mathrm{exp}(-\sum_{i=1}^{n} x_i/\beta)) \cdot (\mathrm{exp}\{(\theta_1-1)\sum^n_1 \mathrm{log}(x_i)\})\)</span>
-Let me digress for a moment and recall the reader’s attention to the concept of a <a href="https://en.wikipedia.org/wiki/Sufficient_statistic">sufficient statistic</a>. In a broad manner, the sufficient statistic encompasses <em>all the information</em> that could possibly be conveyed about the parameter to be estimated <span  class="math">\(\theta\in\Omega\)</span> by the observed data <span  class="math">\(\tilde{X}\)</span>. Therefore, it is always great to use this information in our estimate <span  class="math">\(\hat{\theta}\)</span>.
+<span  class="math">\(L(\theta_1;x_1,\cdots,x_n)=\left[\frac{1}{\Gamma(\theta_1)\beta^{\theta_1}}\right]^n(x_1 x_2\cdots x_n)^{\theta_1-1}\mathrm{exp}(-\sum_{i=1}^{n} x_i/\beta)\)</span></p>
+
+<p><span  class="math">\[= \left(\left[\frac{1}{\Gamma(\theta_1)\beta^{\theta_1}}\right]^n \mathrm{exp}(-\sum_{i=1}^{n} x_i/\beta)\right) \cdot (\mathrm{exp}\{(\theta_1-1)\sum^n_1 \mathrm{log}(x_i)\})\]</span></p>
+
+<p>Let me digress for a moment and recall the reader’s attention to the concept of a <a href="https://en.wikipedia.org/wiki/Sufficient_statistic">sufficient statistic</a>. In a broad manner, the sufficient statistic encompasses <em>all the information</em> that could possibly be conveyed about the parameter to be estimated <span  class="math">\(\theta\in\Omega\)</span> by the observed data <span  class="math">\(\tilde{X}\)</span>. Therefore, it is always great to use this information in our estimate <span  class="math">\(\hat{\theta}\)</span>.
 By using Factorization theorem on the likelihood expression above, the sufficient statistic for $\theta_1$ is given by some <span  class="math">\(Y=u(\tilde{X})=\sum^n_1\mathrm{log}\,x_i\)</span>.
 Note that if you use MoM to estimate the parameters here, the estimate <span  class="math">\(\hat{\theta}\)</span> would *not be a function of *<span  class="math">\(Y\)</span>; it would always be a function of the sample moments <span  class="math">\(\frac{1}{n}\sum_{i=1}^{n}X_i^k\)</span> (sample mean, sample variance, etc.).
 We can conclusively say from this, that</p>
 
-<p><strong>MoM estimate need not be a function of the sufficient statistic; an MLE, if it exists, is ALWAYS a function of the sufficient statistic</strong>*.
+<p><strong>MoM estimate need not be a function of the sufficient statistic; an MLE, if it exists, is ALWAYS a function of the sufficient statistic</strong>.
 This is where MLE shines, and this is why it is used; if it is useful to a problem!
 However, MoM estimates are good starting point for numerically complex point estimation problems and can iteratively lead to a good estimate and are consistent estimates.</p>
 
-<p>##Why MAP?
-Coming back to the definition of the point estimation problem, suppose in addition to <span  class="math">\(\theta\in\Omega\)</span>, we have some more knowledge about where it could be in <span  class="math">\(\Omega\)</span>; this is usually in the form of some *prior knowledge about *<span  class="math">\(\theta\sim g(\theta|\theta\in\Omega)\)</span>; hence called the prior.
+<p>##Why MAP?</p>
+
+<p>Coming back to the definition of the point estimation problem, suppose in addition to <span  class="math">\(\theta\in\Omega\)</span>, we have some more knowledge about where it could be in <span  class="math">\(\Omega\)</span>; this is usually in the form of some <em>prior knowledge about</em> <span  class="math">\(\theta\sim g(\theta|\theta\in\Omega)\)</span>; hence called the prior.
 The MAP estimate is a way to include this knowledge in our estimation as
 <span  class="math">\(\hat{\theta}_{\mathrm{MAP}}=\underset{\theta}{\mathrm{argmax\,}} f(x;\theta)g(\theta)\)</span>
-This is just using the fact that *using more information to find <em><span  class="math">\(\hat{\theta}\)</span></em> wouldn’t hurt!*</p>
+This is just using the fact that <em>using more information to find</em> <span  class="math">\(\hat{\theta}\)</span> <em>wouldn’t hurt!</em></p>
 
-<p>Now that we know about what is going on, I would answer the questions asked here.</p>
-
-<blockquote>
-<p>What is the difference between MAP, MLE, MoM?
+<p>Now that we know about what is going on, I would answer the questions asked here.
+What is the difference between MAP, MLE, MoM?
 I have already answered in terms of the differences. So I would rather answer “When to use MoM, MLE or MAP?” based on my observations:</p>
 
 <ol>
 <li>Do you have a prior knowledge about $\theta$?</li>
-<li>If yes
+<li>If yes, is your prior uniform?
 
-<ol>
-<li>Is your prior uniform?
-
-<ol>
-<li>No → <strong>MAP estimator</strong></li>
+<ul>
+<li>No  <strong>MAP estimator</strong></li>
 <li>Yes; Does a closed form MLE exist?
-Yes → **MLE estimator
-** No → <strong>MoM estimator</strong></li>
-</ol></li>
-</ol></li>
+Yes <span  class="math">\(\rightarrow\)</span> <strong>MLE estimator</strong>
+No <span  class="math">\(\rightarrow\)</span> <strong>MoM estimator</strong></li>
+</ul></li>
 <li>If No, go to 2. (ii) ; use MLE/MoM
 This is only to help choose among the given 3 methods.
 Are there instances where the MOM and MLE are exactly the same?
@@ -147,7 +149,6 @@ If MoM estimate is <em>not</em> a function of the sufficient statistic, the two 
 Interestingly enough, as we observed, MoM estimates need not be a function of the sufficient statistic and the estimate need not even lie in the region <span  class="math">\(\Omega\)</span>!
 Further, the MAP estimate would coincide with the MLE estimate iff <span  class="math">\(g(\theta)=\mathrm{Uniform}(\Omega)\)</span>.</li>
 </ol>
-</blockquote>
 
 <p>I have been superficial in addressing the question so that it is easily understandable. Most of the stuff comes from Introduction to Mathematical Statistics, 7th Edition (<a href="https://www.pearsonhighered.com/program/Hogg-Introduction-to-Mathematical-Statistics-7th-Edition/PGM49624.html">https://www.pearsonhighered.com/program/Hogg-Introduction-to-Mathematical-Statistics-7th-Edition/PGM49624.html</a>), which is a great introductory (and almost standard) text.</p>
 
@@ -181,5 +182,7 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 <script>feather.replace()</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 </body>
 </html>
