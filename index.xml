@@ -13,30 +13,30 @@
     
     <item>
       <title>Compactness</title>
-      <link>http://omanshuthapliyal.github.io/blog/posts/compactness/</link>
+      <link>http://omanshuthapliyal.github.io/blog/compactness/</link>
       <pubDate>Sat, 10 Aug 2019 15:44:20 +0530</pubDate>
       
-      <guid>http://omanshuthapliyal.github.io/blog/posts/compactness/</guid>
+      <guid>http://omanshuthapliyal.github.io/blog/compactness/</guid>
       <description>This is a non-mathematical note on what I understand about compactness and what it means for a set or a space to be compact. The open cover definition is one that can be found in any textbook, but what does it mean for a set to be compact? Why are such sets called compact? And how do compact sets differ from those which are not?
 I think the terminology here is very carefully chosen.</description>
     </item>
     
     <item>
       <title>Instrumentals v/s Vocal Music</title>
-      <link>http://omanshuthapliyal.github.io/blog/posts/instrumental/</link>
+      <link>http://omanshuthapliyal.github.io/blog/instrumental/</link>
       <pubDate>Sun, 28 Jul 2019 16:02:49 -0400</pubDate>
       
-      <guid>http://omanshuthapliyal.github.io/blog/posts/instrumental/</guid>
+      <guid>http://omanshuthapliyal.github.io/blog/instrumental/</guid>
       <description>I often talk to friends about music and musical preferences. This post is inspired by one such theme which often finds its way in most of these conversations: instrumental music v/s vocal music. Or more precisely, why listen to instrumental, or plain music, when you can have vocals accompanying the music.
 This post is not from a musical perspective, but rather to emphasize on the entirely separate form of beauty inherent in instrumental music.</description>
     </item>
     
     <item>
       <title>Point Estimate</title>
-      <link>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</link>
+      <link>http://omanshuthapliyal.github.io/blog/pointestimate/</link>
       <pubDate>Fri, 03 Feb 2017 07:58:15 -0400</pubDate>
       
-      <guid>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</guid>
+      <guid>http://omanshuthapliyal.github.io/blog/pointestimate/</guid>
       <description>Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\).</description>
     </item>
     
