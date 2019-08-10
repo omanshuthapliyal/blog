@@ -4,16 +4,14 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>Point Estimate - Omanshu&#39;s blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta property="og:title" content="Point Estimate" />
-<meta property="og:description" content="This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.
-Background MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics." />
+<meta property="og:description" content="Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\)." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="http://omanshuthapliyal.github.io/blog/posts/pointestimate/" />
 <meta property="article:published_time" content="2017-02-03T07:58:15-04:00"/>
 <meta property="article:modified_time" content="2017-02-03T07:58:15-04:00"/>
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Point Estimate"/>
-<meta name="twitter:description" content="This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.
-Background MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics."/>
+<meta name="twitter:description" content="Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\)."/>
 <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" media="screen" href="../../css/normalize.css" />
@@ -33,15 +31,15 @@ Background MAP (maximum a priori estimate), MLE (maximum likelihood estimate) an
 		<ul class="flat">
 			
 			<li>
-				<a href="http://omanshuthapliyal.github.io/">Home</a>
+				<a href="http://omanshuthapliyal.github.io/blog">Home</a>
 			</li>
 			
 			<li>
-				<a href="../../blog/posts/">All posts</a>
+				<a href="http://omanshuthapliyal.github.io/blog/posts/">All posts</a>
 			</li>
 			
 			<li>
-				<a href="../../blog/tags/">Tags</a>
+				<a href="http://omanshuthapliyal.github.io/blog/tags/">Tags</a>
 			</li>
 			
 		</ul>
@@ -55,13 +53,7 @@ Background MAP (maximum a priori estimate), MLE (maximum likelihood estimate) an
 		</div>
 
 		<div class="markdown">
-			<p>This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.</p>
-
-<h2 id="background">Background</h2>
-
-<p>MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to <a href="https://en.wikipedia.org/wiki/Point_estimation">point estimation</a> problems and are among many other estimation methods in statistics.</p>
-
-<h2 id="point-estimation-problem">Point estimation problem</h2>
+			<h2 id="point-estimation-problem">Point estimation problem</h2>
 
 <p>A generic point estimation problem goes like this:
 Consider a random variable <span  class="math">\(x\sim f(x;\theta)\)</span> with the parameter <span  class="math">\(\theta\in\Omega\)</span>. Here <span  class="math">\(f(x;\theta)\)</span> corresponds to a <em>family of distributions</em> rather than a single probability distribution. We are interested in finding a <em>point</em> estimate to the parameter <span  class="math">\(\theta\)</span>. In order to do that, we draw a random sample with <span  class="math">\(n\)</span> realizations of the random variable <span  class="math">\(x\)</span> as <span  class="math">\(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\)</span>. In shorthand, this realization from the <span  class="math">\(n\)</span> experiments of the given family of distribution is also written as simply <span  class="math">\(\{X_1,X_2,\cdots,X_n\}\)</span>.</p>
@@ -150,7 +142,7 @@ Interestingly enough, as we observed, MoM estimates need not be a function of th
 Further, the MAP estimate would coincide with the MLE estimate iff <span  class="math">\(g(\theta)=\mathrm{Uniform}(\Omega)\)</span>.</li>
 </ol>
 
-<p>I have been superficial in addressing the question so that it is easily understandable. Most of the stuff comes from Introduction to Mathematical Statistics, 7th Edition (<a href="https://www.pearsonhighered.com/program/Hogg-Introduction-to-Mathematical-Statistics-7th-Edition/PGM49624.html">https://www.pearsonhighered.com/program/Hogg-Introduction-to-Mathematical-Statistics-7th-Edition/PGM49624.html</a>), which is a great introductory (and almost standard) text.</p>
+<p>Most of the stuff comes from <a href="https://www.pearsonhighered.com/program/Hogg-Introduction-to-Mathematical-Statistics-7th-Edition/PGM49624.html">Introduction to Mathematical Statistics, 7th Edition</a>, which is a great introductory (and almost standard) text on statistics.</p>
 
 		</div><div id="disqus_thread"></div>
 <script type="text/javascript">

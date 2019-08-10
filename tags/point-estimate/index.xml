@@ -17,8 +17,7 @@
       <pubDate>Fri, 03 Feb 2017 07:58:15 -0400</pubDate>
       
       <guid>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</guid>
-      <description>This is going to take some time and effort to read, as it took to write; but I’ll try to answer to my best knowledge. I will follow a standard approach, but any terms that require some prior knowledge would contain wiki links.
-Background MAP (maximum a priori estimate), MLE (maximum likelihood estimate) and MoM (method of moments) in this context refer to point estimation problems and are among many other estimation methods in statistics.</description>
+      <description>Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\).</description>
     </item>
     
   </channel>
