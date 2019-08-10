@@ -13,10 +13,10 @@
     
     <item>
       <title>Point Estimate</title>
-      <link>http://omanshuthapliyal.github.io/blog/pointestimate/</link>
+      <link>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</link>
       <pubDate>Fri, 03 Feb 2017 07:58:15 -0400</pubDate>
       
-      <guid>http://omanshuthapliyal.github.io/blog/pointestimate/</guid>
+      <guid>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</guid>
       <description>Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\).</description>
     </item>
     
