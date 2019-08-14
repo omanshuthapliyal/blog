@@ -6,10 +6,20 @@
     <description>Recent content in maths on Omanshu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 10 Aug 2019 15:44:20 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 15 Aug 2019 01:34:25 +0530</lastBuildDate>
     
 	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/maths/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>But why is Compactness important?</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/compactness2/</link>
+      <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/compactness2/</guid>
+      <description>In my last post I touched upon the intuition behind topological compactness. We as engineers often hear about the word &#39;compact&#39; as a soft gatekeeping tool from doing serious mathematics. In this post we see why the understanding is very important for doing any mathematics, especially as engineers.
+Recall the open cover definition of a compact set as the existence of a finite open subcover for any given open cover of the set.</description>
+    </item>
     
     <item>
       <title>Compactness</title>

@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>But why is Compactness important?</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/compactness2/</link>
+      <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/compactness2/</guid>
+      <description>In my last post I touched upon the intuition behind topological compactness. We as engineers often hear about the word &#39;compact&#39; as a soft gatekeeping tool from doing serious mathematics. In this post we see why the understanding is very important for doing any mathematics, especially as engineers.
+Recall the open cover definition of a compact set as the existence of a finite open subcover for any given open cover of the set.</description>
+    </item>
+    
+    <item>
       <title>Compactness</title>
       <link>http://omanshuthapliyal.github.io/blog/posts/compactness/</link>
       <pubDate>Sat, 10 Aug 2019 15:44:20 +0530</pubDate>
@@ -34,7 +44,7 @@ This post is not from a musical perspective, but rather to emphasize on the enti
     <item>
       <title>Point Estimate</title>
       <link>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</link>
-      <pubDate>Fri, 03 Feb 2017 07:58:15 -0400</pubDate>
+      <pubDate>Wed, 24 Jul 2019 01:34:25 +0530</pubDate>
       
       <guid>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</guid>
       <description>Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\).</description>

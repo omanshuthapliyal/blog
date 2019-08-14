@@ -6,7 +6,7 @@
     <description>Recent content in point estimate on Omanshu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 03 Feb 2017 07:58:15 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jul 2019 01:34:25 +0530</lastBuildDate>
     
 	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/point-estimate/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>Point Estimate</title>
       <link>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</link>
-      <pubDate>Fri, 03 Feb 2017 07:58:15 -0400</pubDate>
+      <pubDate>Wed, 24 Jul 2019 01:34:25 +0530</pubDate>
       
       <guid>http://omanshuthapliyal.github.io/blog/posts/pointestimate/</guid>
       <description>Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\).</description>
