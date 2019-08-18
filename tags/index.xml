@@ -6,10 +6,37 @@
     <description>Recent content in Tags on Omanshu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Aug 2019 01:34:25 +0530</lastBuildDate>
+    <lastBuildDate>Sun, 18 Aug 2019 22:36:00 +0530</lastBuildDate>
     
 	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>machine learning</title>
+      <link>http://omanshuthapliyal.github.io/blog/tags/machine-learning/</link>
+      <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>resource</title>
+      <link>http://omanshuthapliyal.github.io/blog/tags/resource/</link>
+      <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/tags/resource/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>sota</title>
+      <link>http://omanshuthapliyal.github.io/blog/tags/sota/</link>
+      <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/tags/sota/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>compactness</title>

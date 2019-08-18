@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>machine learning on Omanshu&#39;s blog</title>
+    <link>http://omanshuthapliyal.github.io/blog/tags/machine-learning/</link>
+    <description>Recent content in machine learning on Omanshu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 18 Aug 2019 22:36:00 +0530</lastBuildDate>
+    
+	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>ML SoTA Resources</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/ml-sota/</link>
+      <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/ml-sota/</guid>
+      <description>The internet is filled with machine learning resources, and one of the most annoying things about them is the sheer volume. There are many attempts at making compilations of papers, code, and current status quo in the vastly active, and fast paced field. This post is to serve as a collection of my own where I will only post state of the art in machine learning.
+Most of these links are updated frequently and maintained by the community, and I have collected these only for reference.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -3,20 +3,43 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://omanshuthapliyal.github.io/blog/posts/compactness2/</loc>
-    <lastmod>2019-08-15T01:34:25+05:30</lastmod>
+    <loc>http://omanshuthapliyal.github.io/blog/posts/ml-sota/</loc>
+    <lastmod>2019-08-18T22:36:00+05:30</lastmod>
   </url>
   
   <url>
     <loc>http://omanshuthapliyal.github.io/blog/posts/</loc>
-    <lastmod>2019-08-15T01:34:25+05:30</lastmod>
+    <lastmod>2019-08-18T22:36:00+05:30</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://omanshuthapliyal.github.io/blog/tags/</loc>
-    <lastmod>2019-08-15T01:34:25+05:30</lastmod>
+    <lastmod>2019-08-18T22:36:00+05:30</lastmod>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/tags/machine-learning/</loc>
+    <lastmod>2019-08-18T22:36:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/tags/resource/</loc>
+    <lastmod>2019-08-18T22:36:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/tags/sota/</loc>
+    <lastmod>2019-08-18T22:36:00+05:30</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/posts/compactness2/</loc>
+    <lastmod>2019-08-15T01:34:25+05:30</lastmod>
   </url>
   
   <url>

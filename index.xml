@@ -12,6 +12,16 @@
     
     
     <item>
+      <title>ML SoTA Resources</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/ml-sota/</link>
+      <pubDate>Sun, 18 Aug 2019 22:36:00 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/ml-sota/</guid>
+      <description>The internet is filled with machine learning resources, and one of the most annoying things about them is the sheer volume. There are many attempts at making compilations of papers, code, and current status quo in the vastly active, and fast paced field. This post is to serve as a collection of my own where I will only post state of the art in machine learning.
+Most of these links are updated frequently and maintained by the community, and I have collected these only for reference.</description>
+    </item>
+    
+    <item>
       <title>But why is Compactness important?</title>
       <link>http://omanshuthapliyal.github.io/blog/posts/compactness2/</link>
       <pubDate>Thu, 15 Aug 2019 01:34:25 +0530</pubDate>
