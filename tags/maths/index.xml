@@ -6,10 +6,20 @@
     <description>Recent content in maths on Omanshu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 15 Aug 2019 01:34:25 +0530</lastBuildDate>
+    <lastBuildDate>Sat, 24 Aug 2019 23:38:20 +0530</lastBuildDate>
     
 	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/maths/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>My Real Notes</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/my-real-notes/</link>
+      <pubDate>Sat, 24 Aug 2019 23:38:20 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/my-real-notes/</guid>
+      <description>When I took the course on Real Analysis, it made me very nervous. I was having fever dreams from the past when I took undergraduate real analysis and the epsilon-delta definitions just did not make a lot of sense. In retrospect, taking MA504 has been one of the best academic decisions, especially as an engineer.
+It has helped me a lot in how to concretely formulate definitions, and what &amp;lsquo;approaching&amp;rsquo;, &amp;lsquo;tending&amp;rsquo;, &amp;lsquo;limiting&amp;rsquo;, and other weasel words mean in a mathematical sense.</description>
+    </item>
     
     <item>
       <title>But why is Compactness important?</title>
