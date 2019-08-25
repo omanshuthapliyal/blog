@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>research on Omanshu&#39;s blog</title>
+    <link>http://omanshuthapliyal.github.io/blog/tags/research/</link>
+    <description>Recent content in research on Omanshu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 25 Aug 2019 20:20:44 +0530</lastBuildDate>
+    
+	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/research/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Birds and Frogs in Science</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/birds-and-frogs-in-science/</link>
+      <pubDate>Sun, 25 Aug 2019 20:20:44 +0530</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/birds-and-frogs-in-science/</guid>
+      <description>One of my fellow grad students shared a paper with me that turned out to be a great read. It was Professor Freeman Dyson&#39;s article titled &amp;quot;Birds and Frogs&amp;quot;(https://www.ams.org/notices/200902/rtx090200212p.pdf), that was the invited Einstein lecture at the American Mathematical Society. Dyson talks about two categories of mathematicians (researchers) -- birds, and frogs. While birds soar high, and get a view of the entire landscape, frogs tread tread deep, looking for details.</description>
+    </item>
+    
+  </channel>
+</rss>
