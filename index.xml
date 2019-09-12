@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>MLP Approximation</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/mlp-approximation/</link>
+      <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/mlp-approximation/</guid>
+      <description>Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP). Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator. Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc.</description>
+    </item>
+    
+    <item>
       <title>Birds and Frogs in Science</title>
       <link>http://omanshuthapliyal.github.io/blog/posts/birds-and-frogs/</link>
       <pubDate>Sun, 25 Aug 2019 20:20:44 +0530</pubDate>

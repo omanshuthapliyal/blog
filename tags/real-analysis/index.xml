@@ -6,10 +6,19 @@
     <description>Recent content in real analysis on Omanshu&#39;s blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 24 Aug 2019 23:38:20 +0530</lastBuildDate>
+    <lastBuildDate>Thu, 12 Sep 2019 10:27:01 -0400</lastBuildDate>
     
 	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/real-analysis/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>MLP Approximation</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/mlp-approximation/</link>
+      <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/mlp-approximation/</guid>
+      <description>Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP). Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator. Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc.</description>
+    </item>
     
     <item>
       <title>Real Analysis Notes</title>

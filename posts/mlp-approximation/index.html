@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"><title>MLP Approximation - Omanshu&#39;s blog</title><meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta property="og:title" content="MLP Approximation" />
+<meta property="og:description" content="Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP). Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator. Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://omanshuthapliyal.github.io/blog/posts/mlp-approximation/" />
+<meta property="article:published_time" content="2019-09-12T10:27:01-04:00"/>
+<meta property="article:modified_time" content="2019-09-12T10:27:01-04:00"/>
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MLP Approximation"/>
+<meta name="twitter:description" content="Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP). Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator. Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc."/>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,300italic,400italic|Raleway:500,100,300" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/normalize.css" />
+	<link rel="stylesheet" type="text/css" media="screen" href="../../css/main.css" /><script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script><script src="../../js/main.js"></script>
+</head>
+
+<body>
+	<div class="container wrapper post">
+		<div class="header">
+	<h1 class="site-title">Omanshu&#39;s blog</h1>
+	<div class="site-description"><h2>I will post here about many things from a bird&rsquo;s eye view until I think I know enough to write about a few in some depth.</h2><nav class="nav social">
+			<ul class="flat"><a href="https://github.com/omanshuthapliyal" title="Github"><i data-feather="github"></i></a><a href="https://www.linkedin.com/in/omanshu/" title="Linkedin"><i data-feather="linkedin"></i></a><a href="https://www.facebook.com/omanshu" title="Facebook"><i data-feather="facebook"></i></a></ul>
+		</nav>
+	</div>
+
+	<nav class="nav">
+		<ul class="flat">
+			
+			<li>
+				<a href="http://omanshuthapliyal.github.io/">Home</a>
+			</li>
+			
+			<li>
+				<a href="http://omanshuthapliyal.github.io/blog/posts/">All posts</a>
+			</li>
+			
+			<li>
+				<a href="http://omanshuthapliyal.github.io/blog/tags/">Tags</a>
+			</li>
+			
+		</ul>
+	</nav>
+</div>
+
+
+		<div class="post-header">
+			<h1 class="title">MLP Approximation</h1>
+			<div class="meta">Posted at &mdash; Sep 12, 2019</div>
+		</div>
+
+		<div class="markdown">
+			<p>Almost always we hear about classification or machine learning problems, the go-to methods to solve the problem are neural networks, or multi-layered percetrons (MLP).
+Now function approximation problems, which is what classification is, are very well defined in terms of consistency, accuracy, and other abilities of the approximator.
+Why are MLPs then able to approximate functions well? Especially given the fact that most of the problems in coming up with candidate architectures, activation functions, etc. are 'design problems'.</p>
+
+<p>Herein comes the <a href="https://en.wikipedia.org/wiki/Universal_approximation_theorem">Universal Approximation Theorem</a>, which says that <a href="../../mlp-approximation/1-hiddenlayer.png">MLPs with a single hidden layer</a> can approximate Borel measurable functions a finite set to arbitrary degrees of accuracy. That is, if you need an <span  class="math">\(\epsilon\)</span> level of accuracy, there exists some finite number <span  class="math">\(k\)</span> of units in the hidden layer that will be able to achieve the said accuracy.
+This looks awfully similar to Stone-Weierstrass theorem!
+And if we think of rectified lineaer unit (ReLU) activations {<span  class="math">\(\sigma(z) = \max{\{0,z\}}\)</span>}, it indeed is convincing.</p>
+
+<p>Think of just a 1-d function <span  class="math">\(f(x)\)</span> that we want to approximate on <span  class="math">\([a,b]\)</span>.
+We do so by usinga single hidden layer activated by ReLUs. That is, <span  class="math">\(y(x)=\sum^k_{j=1}\sigma(w_jx+\theta_j)+b_j\)</span>. In order to convince ourselves that <span  class="math">\(f(x)\)</span> can indeed be written as a finite sum of ReLUs given some degree of accuracy, we can look at an individual ReLU unit's output as <span  class="math">\(\sigma(w_jx+\theta_j)\)</span>. This would have an intercept at <span  class="math">\(\theta_j\)</span>. Without any loss, let <span  class="math">\(\varphi_j\)</span>'s be <span  class="math">\(\theta_j\)</span>'s sorted on the real line. This way we can split the sum <a href="../../mlp-approximation/relus.png">as shown</a>.</p>
+
+<p>Note that if we choose <span  class="math">\(\varphi_1=a\)</span> and <span  class="math">\(\varphi_k=b\)</span> for some <span  class="math">\(k\)</span> that we would determine later, the sum of the activation functions is essentially of a piecewise linear on the interval <span  class="math">\([a,b]\)</span> where <span  class="math">\(y(a)=f(a)\)</span> and <span  class="math">\(y(b)=f(b)\)</span>by designing the <span  class="math">\(b_j\)</span>'s appropriately.
+That is, now we have <span  class="math">\(k-\)</span>segments of piecewise linear functions, for each of which, we still have appropriate flexibility to choose the slope and height from the x-axis by manipulating <span  class="math">\(\varphi_j\)</span>'s and <span  class="math">\(b_j\)</span>'s.
+The end result would be a <a href="../../mlp-approximation/approx.png">piecewise linear function with <span  class="math">\(k-\)</span> segments on <span  class="math">\([a,b]\)</span></a>. Recall that we can still manipulate individual segments to obtain an arbitrary level of accuracy, if we keep making <span  class="math">\(k\)</span> large.
+That's it.
+This is a simple consequence of the Stone-Weierstrass theorem that we used to approximate a continuous function on <span  class="math">\([a,b]\)</span> to a fixed level of accuracy using a finite <span  class="math">\(k\)</span> number of units in the single hidden layer.</p>
+
+<p>In reality, proving the actual universal approximation theorem is much more involved, <em>and</em> is proven for more general activation functions, and for inputs and parameters in a higher dimension, <em>and</em> for a wider class of functions.</p>
+
+		</div><div id="disqus_thread"></div>
+<script type="text/javascript">
+	(function () {
+		
+		
+		if (window.location.hostname == "localhost")
+			return;
+
+		var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+		var disqus_shortname = 'https-omanshuthapliyal-github-io-blog';
+		dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+	})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+		Disqus.</a></noscript>
+<a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+	
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-144848923-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script>feather.replace()</script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</body>
+</html>
