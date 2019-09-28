@@ -12,6 +12,15 @@
     
     
     <item>
+      <title>The Industry-Academia split in Control Systems</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/split/</link>
+      <pubDate>Mon, 16 Sep 2019 12:32:31 -0400</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/split/</guid>
+      <description>I often wonder why the &amp;quot;cutting edge&amp;quot; research that we read about in the foremost scientific journals &amp;amp; conferences in Control Systems are never applied in the industry. Because whenever we read/write papers, Section-I always tries to ground itself to industry and/or practical applications. However, it&#39;s pretty well known that a majority of the controllers used in the industry are still tuned PIDs. Even though sub-fields of modern control -- adaptive, and robust control are very mature and pretty old in their own rights, the real world&#39;s inertia against using modern control techniques bears substantial weight.</description>
+    </item>
+    
+    <item>
       <title>MLP Approximation</title>
       <link>http://omanshuthapliyal.github.io/blog/posts/mlp-approximation/</link>
       <pubDate>Thu, 12 Sep 2019 10:27:01 -0400</pubDate>
