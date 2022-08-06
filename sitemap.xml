@@ -4,13 +4,30 @@
   
   <url>
     <loc>http://omanshuthapliyal.github.io/blog/posts/</loc>
-    <lastmod>2019-09-16T12:32:31-04:00</lastmod>
+    <lastmod>2022-02-01T12:32:31-04:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://omanshuthapliyal.github.io/blog/tags/</loc>
-    <lastmod>2019-09-16T12:32:31-04:00</lastmod>
+    <lastmod>2022-02-01T12:32:31-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</loc>
+    <lastmod>2022-02-01T12:32:31-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/tags/control-system/</loc>
+    <lastmod>2022-02-01T12:32:31-04:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/tags/research/</loc>
+    <lastmod>2022-02-01T12:32:31-04:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -51,12 +68,6 @@
   <url>
     <loc>http://omanshuthapliyal.github.io/blog/posts/birds-and-frogs/</loc>
     <lastmod>2019-08-25T20:20:44+05:30</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://omanshuthapliyal.github.io/blog/tags/research/</loc>
-    <lastmod>2019-08-25T20:20:44+05:30</lastmod>
-    <priority>0</priority>
   </url>
   
   <url>
@@ -148,15 +159,6 @@
   
   <url>
     <loc>http://omanshuthapliyal.github.io/blog/publication_types/</loc>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</loc>
-  </url>
-  
-  <url>
-    <loc>http://omanshuthapliyal.github.io/blog/tags/control-system/</loc>
     <priority>0</priority>
   </url>
   
