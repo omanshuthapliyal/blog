@@ -20,5 +20,15 @@
       <description>One of my fellow grad students shared a paper with me that turned out to be a great read. It was Professor Freeman Dyson&#39;s article titled Birds and Frogs, that was the invited Einstein lecture at the American Mathematical Society. Dyson talks about two categories of mathematicians (researchers) -- birds, and frogs. While birds soar high, and get a view of the entire landscape, frogs tread tread deep, looking for details.</description>
     </item>
     
+    <item>
+      <title>Why I am studying what I do: Data Driven Safety</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</guid>
+      <description>This is my attempt to try to motivate and justify why I am studying what I study, and to try to justify the title of my dissertation.
+While most emphasis on safety has been provided from a model-driven perspective, data-driven approaches present a novel semi model-driven method by employing model-discovery. As data becomes more inexpensive, and system capabilities highly nonlinear, and often subject to parameter variations during mission, data-driven approaches are utilized more and more in controls engineering.</description>
+    </item>
+    
   </channel>
 </rss>

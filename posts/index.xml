@@ -97,5 +97,15 @@ This post is not from a musical perspective, but rather to emphasize on the enti
       <description>Point estimation problem A generic point estimation problem goes like this: Consider a random variable \(x\sim f(x;\theta)\) with the parameter \(\theta\in\Omega\). Here \(f(x;\theta)\) corresponds to a family of distributions rather than a single probability distribution. We are interested in finding a point estimate to the parameter \(\theta\). In order to do that, we draw a random sample with \(n\) realizations of the random variable \(x\) as \(\tilde{X}=\{x_1=X_1,x_2=X_2,\cdots, x_n=X_n\}\). In shorthand, this realization from the \(n\) experiments of the given family of distribution is also written as simply \(\{X_1,X_2,\cdots,X_n\}\).</description>
     </item>
     
+    <item>
+      <title>Why I am studying what I do: Data Driven Safety</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</guid>
+      <description>This is my attempt to try to motivate and justify why I am studying what I study, and to try to justify the title of my dissertation.
+While most emphasis on safety has been provided from a model-driven perspective, data-driven approaches present a novel semi model-driven method by employing model-discovery. As data becomes more inexpensive, and system capabilities highly nonlinear, and often subject to parameter variations during mission, data-driven approaches are utilized more and more in controls engineering.</description>
+    </item>
+    
   </channel>
 </rss>

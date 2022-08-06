@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>control system on Omanshu&#39;s blog</title>
+    <link>http://omanshuthapliyal.github.io/blog/tags/control-system/</link>
+    <description>Recent content in control system on Omanshu&#39;s blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="http://omanshuthapliyal.github.io/blog/tags/control-system/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Why I am studying what I do: Data Driven Safety</title>
+      <link>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</guid>
+      <description>This is my attempt to try to motivate and justify why I am studying what I study, and to try to justify the title of my dissertation.
+While most emphasis on safety has been provided from a model-driven perspective, data-driven approaches present a novel semi model-driven method by employing model-discovery. As data becomes more inexpensive, and system capabilities highly nonlinear, and often subject to parameter variations during mission, data-driven approaches are utilized more and more in controls engineering.</description>
+    </item>
+    
+  </channel>
+</rss>

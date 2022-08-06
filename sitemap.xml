@@ -151,4 +151,13 @@
     <priority>0</priority>
   </url>
   
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/posts/data-driven-safety/</loc>
+  </url>
+  
+  <url>
+    <loc>http://omanshuthapliyal.github.io/blog/tags/control-system/</loc>
+    <priority>0</priority>
+  </url>
+  
 </urlset>
